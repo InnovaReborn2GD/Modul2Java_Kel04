@@ -2,7 +2,7 @@ package id.innovareborn.praktikum.noName;
 import java.util.Scanner;
 
 public class CarSelector {
-    public static void main(String[]args) {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Selamat datang di Innova Cars!! CarSelector v1.00");
         System.out.print("Masukkan budget (Dalam ratusan juta): ");
@@ -15,10 +15,10 @@ public class CarSelector {
             System.out.println("Anda memiliki budget IDR " + budget + " juta.");
             System.out.println("Silakan pilih mobil yang anda inginkan:");
             for (int i = 0; i < mobil1.length; i++) {
-                System.out.println((i + 1) + ". " + mobil1[i] + " (IDR " + harga1[i] + " juta)");}
-            Scanner scan2 = new Scanner(System.in);
+                System.out.println((i + 1) + ". " + mobil1[i] + " (IDR " + harga1[i] + " juta)"); }
+            Scanner scan11 = new Scanner(System.in);
             System.out.print("Masukkan pilihan anda: ");
-            int mobil_cat1 = scan2.nextInt();
+            int mobil_cat1 = scan11.nextInt();
 
             switch (mobil_cat1) {
                 case (1):
@@ -69,8 +69,7 @@ public class CarSelector {
                 default:
                     System.out.println("Pilihan anda tidak sah, silakan coba lagi.");
             }
-        }
-        else if (budget >= 500 && budget <= 999) {
+        } else if (budget >= 500 && budget <= 999) {
             String[] mobil2 = {"Toyota Fortuner 2.8 GR-S 4x4 2024", "Mitsubishi Pajero Sport Dakar 4x2 2021",
                     "Suzuki Jimny 5-Door 2023"};
             int[] harga2 = {740, 554, 510};
@@ -78,10 +77,10 @@ public class CarSelector {
             System.out.println("Anda memiliki budget IDR " + budget + " juta.");
             System.out.println("Silakan pilih mobil yang anda inginkan:");
             for (int i = 0; i < mobil2.length; i++) {
-                System.out.println((i + 1) + ". " + mobil2[i] + " (IDR " + harga2[i] + " juta)");}
-            Scanner scan6 = new Scanner(System.in);
+                System.out.println((i + 1) + ". " + mobil2[i] + " (IDR " + harga2[i] + " juta)"); }
+            Scanner scan11 = new Scanner(System.in);
             System.out.print("Masukkan pilihan anda: ");
-            int mobil_cat2 = scan6.nextInt();
+            int mobil_cat2 = scan11.nextInt();
 
             switch (mobil_cat2) {
                 case (1):
@@ -132,19 +131,18 @@ public class CarSelector {
                 default:
                     System.out.println("Pilihan anda tidak sah, silakan coba lagi.");
             }
-        }
-        else if (budget >= 250 && budget <= 499) {
+        } else if (budget >= 250 && budget <= 499) {
             String[] mobil3 = {"Toyota Innova Venturer Diesel 2021", "Mitsubishi Xpander Cross 2023",
-                                "Cherry Omoda 5", "Hyundai Stargazer Prime"};
+                    "Cherry Omoda 5", "Hyundai Stargazer Prime"};
             int[] harga3 = {435, 279, 311, 307};
 
             System.out.println("Anda memiliki budget IDR " + budget + " juta.");
             System.out.println("Silakan pilih mobil yang anda inginkan:");
             for (int i = 0; i < mobil3.length; i++) {
-                System.out.println((i + 1) + ". " + mobil3[i] + " (IDR " + harga3[i] + " juta)");}
-            Scanner scan10 = new Scanner(System.in);
+                System.out.println((i + 1) + ". " + mobil3[i] + " (IDR " + harga3[i] + " juta)"); }
+            Scanner scan11 = new Scanner(System.in);
             System.out.print("Masukkan pilihan anda: ");
-            int mobil_cat3 = scan10.nextInt();
+            int mobil_cat3 = scan11.nextInt();
 
             switch (mobil_cat3) {
                 case (1):
@@ -210,16 +208,16 @@ public class CarSelector {
                 default:
                     System.out.println("Pilihan anda tidak sah, silakan coba lagi.");
             }
-        }
-        else if (budget >= 100 && budget <= 249) {
+        } else if (budget >= 100 && budget <= 249) {
             String[] mobil4 = {"Toyota Calya 1.2 G 2024", "Daihatsu Ayla 1.2 R ADS 2023",
-                                "Toyota Raize GR-S 2024", "Ford Fiesta 1.5 S 2014"};
+                    "Toyota Raize GR-S 2024", "Ford Fiesta 1.5 S 2014"};
             int[] harga4 = {167, 192, 238, 129};
 
             System.out.println("Anda memiliki budget IDR " + budget + "juta.");
             System.out.println("Silakan pilih mobil yang anda inginkan:");
             for (int i = 0; i < mobil4.length; i++) {
-                System.out.println((i + 1) + ". " + mobil4[i] + " (IDR " + harga4[i] + " juta)"); }
+                System.out.println((i + 1) + ". " + mobil4[i] + " (IDR " + harga4[i] + " juta)");
+            }
             Scanner scan11 = new Scanner(System.in);
             System.out.print("Masukkan pilihan anda: ");
             int mobil_cat4 = scan11.nextInt();
@@ -288,9 +286,9 @@ public class CarSelector {
                 default:
                     System.out.println("Pilihan anda tidak sah, silakan coba lagi.");
             }
-        }
-        else {
+        } else {
             System.out.println("Pilihan yang anda masukkan tidak sah, silakan coba lagi.");
         }
     }
 }
+
